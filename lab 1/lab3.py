@@ -1,18 +1,14 @@
- # есть два списака, размер произвольный. 2-е группы (студентов) имена и фамилии,
- # произвольно заменить 3 случайно выбранных элемента первой группы на 3 случайно выбранных 2 группы поменять местами
- # удалить из каждой группы пред последний элемент
- # списки предворительно отсортировать в лексикограф.
 import random
 from faker import Faker
 
 fake = Faker("ru_RU")
 
-length = int(random.random() * 10+3)
+length = int(random.random() * 10 + 3)
 grup1 = []
 for _ in range(length):
     grup1.append(fake.name())
 
-length = int(random.random() * 10+3)
+length = int(random.random() * 10 + 3)
 grup2 = []
 for _ in range(length):
     grup2.append(fake.name())
